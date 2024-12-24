@@ -1,0 +1,74 @@
+.Homepage {
+font-family: Arial, sans-serif;
+}
+
+header {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background-color: #333;
+padding: 10px 0;
+z-index: 1000;
+}
+
+nav {
+display: flex;
+justify-content: center;
+}
+
+button {
+margin: 0 10px;
+padding: 10px 20px;
+font-size: 16px;
+background-color: #4CAF50;
+color: white;
+border: none;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+button:hover {
+background-color: #45a049;
+}
+
+main {
+padding-top: 60px; /* To account for the fixed header */
+}
+
+section {
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px;
+box-sizing: border-box;
+}
+
+section:nth-child(odd) {
+background-color: #f2f2f2;
+}
+
+h2 {
+font-size: 2.5em;
+margin-bottom: 20px;
+}
+
+.contact-content {
+text-align: center;
+max-width: 600px;
+}
+
+.contact-info {
+margin-top: 30px;
+}
+
+.contact-info h3 {
+font-size: 1.5em;
+margin-bottom: 10px;
+}
+
+.contact-info p {
+margin: 5px 0;
+}
