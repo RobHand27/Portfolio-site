@@ -9,17 +9,18 @@ function Homepage() {
     const projectsRef = useRef(null);
     const cvRef = useRef(null);
     const contactRef = useRef(null);
+
     const scrollToSection = (sectionId) => {
         let ref;
         switch (sectionId) {
         case 'about':
-            ref = homeRef;
-            break;
-        case 'projects':
             ref = aboutRef;
             break;
+        case 'projects':
+            ref = projectsRef;
+            break;
         case 'cv':
-            ref = namesRef;
+            ref = cvRef;
             break;
         case 'contact':
             ref = contactRef;
@@ -42,9 +43,17 @@ function Homepage() {
                 </nav>
             </header>
             <main>
-                <section ref={aboutRef}>
-                    <h2>About</h2>
-                    {/* About content */}
+                <section ref={aboutRef} className="about-section">
+                    <h2 className="section-title">About Me</h2>
+                    <div className="about-content">
+                        <div className="about-text">
+                            <h3>Hi, I'm Rob &#128075;</h3>
+                            <p>Text about me is comming here soon!</p>
+                        </div>
+                        <div className="about-image">
+                            <img src="/me.png" alt="Picture of me" />
+                        </div>
+                    </div>
                 </section>
                 <section ref={projectsRef}>
                     <h2>Projects</h2>
@@ -59,12 +68,12 @@ function Homepage() {
                     {<div className="contact-content">
                         <h2>Get in Touch</h2>
                         <p>We'd love to hear from you! Please fill out the form below and we'll get back to you as soon as possible.</p>
-                        <div className="contact-info">
-                            <h3>Other Ways to Reach Us</h3>
-                            <p>Email: contact@example.com</p>
-                            <p>Phone: (123) 456-7890</p>
-                            <p>Address: 123 Main St, Anytown, USA 12345</p>
-                        </div>
+                            <div className="contact-info">
+                                <h3>Other Ways to Reach Us</h3>
+                                <p>Email: contact@example.com</p>
+                                <p>Phone: (123) 456-7890</p>
+                                <p>Address: 123 Main St, Anytown, USA 12345</p>
+                            </div>
                         </div>}
                 </section>
             </main>
@@ -73,18 +82,13 @@ function Homepage() {
 }
 
 export default Homepage;
-// left off using hooks to implement scroll to section functionallity with header.
 
-// also remember to make header scroll with user
+// button code
+{/* <a href="https://www.example.com">
+  <button>Click me</button>
+</a> */}
 
-
-{/* <header className="Homepage-header">
-                <p>
-                    Welcome to the homepage!
-                </p> a
-                <button onClick={() => navigate('/')}>Homepage</button>
-            </header> */}
-
+// dummy code for submission form instead of email
 {/* <form onSubmit={handleSubmit}> */
 /* <div className="form-group">
 <label htmlFor="name">Name:</label>
