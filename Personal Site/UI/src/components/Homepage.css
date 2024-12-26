@@ -53,14 +53,16 @@ h2 {
 font-size: 2.5em;
 margin-bottom: 20px;
 }
-/* styles for each section */
+/* about section */
 .about-section {
 display: flex;
 flex-direction: column;
 align-items: center;
+min-height: 100vh; /* ensures minimum height */
+padding: 480px 20px; /* adds padding top and bottom */
 }
 
-.section-title {
+.about-title {
 width: 100%;
 text-align: center;
 margin-top: -80px;
@@ -77,18 +79,21 @@ max-width: 1200px;
 flex: 1;
 padding-right: 20px;
 font-size: 22px;
+align-items: flex-start;
+/* line-height: 1.6; line spacing */
 }
 
 .about-image {
 flex: 1;
 display: flex;
 justify-content: center;
-align-items: center;
+align-items: flex-start;
 }
 
 .about-image img {
 max-width: 60%;
 height: auto;
+border-radius: 40px;
 }
 
 @media (max-width: 768px) {
@@ -101,7 +106,57 @@ height: auto;
     padding: 0;
 }
 }
+/* social buttons */
+.social-buttons-container {
+display: flex;
+flex-direction: column;
+gap: 20px;
+width: 100%;
+max-width: 600px;
+margin: 0 auto;
+}
 
+.social-button {
+display: flex;
+align-items: center;
+gap: 15px;
+padding: 15px 25px;
+border-radius: 50px;
+background: #000;
+border: 2px solid #fff;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.social-button img {
+width: 30px;
+height: 24px;
+}
+
+.social-button span {
+color: #fff;
+font-size: 1.2rem;
+}
+
+.linkedin:hover {
+background-color: #0077b5;
+border-color: #0077b5;
+transform: scale(1.02);
+}
+
+.github:hover {
+background-color: #333;
+border-color: #333;
+transform: scale(1.02);
+}
+
+/* contact section section */
+.contact-title {
+width: 100%;
+text-align: center;
+margin-top: -200px; /* adjust header here */
+margin-bottom: 40px;
+}
 
 .contact-content {
 text-align: center;
@@ -119,4 +174,11 @@ margin-bottom: 10px;
 
 .contact-info p {
 margin: 5px 0;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }

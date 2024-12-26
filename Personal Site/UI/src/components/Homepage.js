@@ -39,16 +39,31 @@ function Homepage() {
                     <button onClick={() => scrollToSection('projects')}>Projects</button>
                     <button onClick={() => scrollToSection('cv')}>CV</button>
                     <button onClick={() => scrollToSection('contact')}>Contact</button>
-                    {/* insert linkedin and github buttons in about */}
+                    {/* maybe add emojis*/}
                 </nav>
             </header>
             <main>
                 <section ref={aboutRef} className="about-section">
-                    <h2 className="section-title">About Me</h2>
+                    <h2 className="about-title">About Me</h2>
                     <div className="about-content">
                         <div className="about-text">
                             <h3>Hi, I'm Rob &#128075;</h3>
-                            <p>Text about me is comming here soon!</p>
+                            <p>Text about me is comming here soon! This is dummy text, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                            Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Pellentesque vitae eros at libero efficitur bibendum. </p>
+                            <div className="social-buttons-container">
+                                <a href="https://www.linkedin.com/in/rhand7/" target="_blank" rel="noopener noreferrer">
+                                    <div className="social-button linkedin">
+                                        <img src="/linkedinlogo.png" alt="LinkedIn" />
+                                        <span>Robert Hand</span>
+                                    </div>
+                                </a>
+                                <a href="https://github.com/RobHand27" target="_blank" rel="noopener noreferrer">
+                                    <div className="social-button github">
+                                        <img src="/githublogo.png" alt="GitHub" />
+                                        <span>RobHand27</span>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                         <div className="about-image">
                             <img src="/me.png" alt="Picture of me" />
@@ -63,9 +78,9 @@ function Homepage() {
                     <h2>CV</h2>
                     {/* CV content */}
                 </section>
-                <section ref={contactRef}>
-                    <h2>Contact</h2>
-                    {<div className="contact-content">
+                <section ref={contactRef} className="contact-section">
+                    <h2 className="contact-title">Contact</h2>
+                    <div className="contact-content">
                         <h2>Get in Touch</h2>
                         <p>We'd love to hear from you! Please fill out the form below and we'll get back to you as soon as possible.</p>
                             <div className="contact-info">
@@ -74,7 +89,7 @@ function Homepage() {
                                 <p>Phone: (123) 456-7890</p>
                                 <p>Address: 123 Main St, Anytown, USA 12345</p>
                             </div>
-                        </div>}
+                    </div>
                 </section>
             </main>
         </div>
