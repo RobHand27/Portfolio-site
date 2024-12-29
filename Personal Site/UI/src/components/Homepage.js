@@ -49,7 +49,11 @@ function Homepage() {
                         <div className="about-text">
                             <h3>Hi, I'm Rob &#128075;</h3>
                             <p>Text about me is comming here soon! This is dummy text, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-                            Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Pellentesque vitae eros at libero efficitur bibendum. </p>
+                            Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Pellentesque vitae eros at libero efficitur bibendum.
+                            </p>
+                        </div>
+                        <div className="about-image">
+                            <img src="/me.png" alt="Picture of me" />
                             <div className="social-buttons-container">
                                 <a href="https://www.linkedin.com/in/rhand7/" target="_blank" rel="noopener noreferrer">
                                     <div className="social-button linkedin">
@@ -64,9 +68,6 @@ function Homepage() {
                                     </div>
                                 </a>
                             </div>
-                        </div>
-                        <div className="about-image">
-                            <img src="/me.png" alt="Picture of me" />
                         </div>
                     </div>
                 </section>

@@ -58,8 +58,8 @@ margin-bottom: 20px;
 display: flex;
 flex-direction: column;
 align-items: center;
-min-height: 100vh; /* ensures minimum height */
-padding: 480px 20px; /* adds padding top and bottom */
+min-height: 10vh; /* ensures minimum height */
+padding: 430px 5px; /* adds padding top and bottom */
 }
 
 .about-title {
@@ -76,7 +76,7 @@ max-width: 1200px;
 }
 
 .about-text {
-flex: 1;
+flex: 2;
 padding-right: 20px;
 font-size: 22px;
 align-items: flex-start;
@@ -86,12 +86,14 @@ align-items: flex-start;
 .about-image {
 flex: 1;
 display: flex;
+flex-direction: column;
 justify-content: center;
-align-items: flex-start;
+align-items: center;
+gap: 30px;
 }
 
 .about-image img {
-max-width: 60%;
+max-width: 70%;
 height: auto;
 border-radius: 40px;
 }
@@ -112,8 +114,8 @@ display: flex;
 flex-direction: column;
 gap: 20px;
 width: 100%;
-max-width: 600px;
-margin: 0 auto;
+max-width: 300px;  /* Adjust width to match image better */
+margin-top: 20px;
 }
 
 .social-button {
