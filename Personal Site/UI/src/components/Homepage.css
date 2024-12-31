@@ -58,8 +58,8 @@ margin-bottom: 20px;
 display: flex;
 flex-direction: column;
 align-items: center;
-min-height: 10vh; /* ensures minimum height */
-padding: 430px 5px; /* adds padding top and bottom */
+min-height: 10vh;
+padding: 430px 5px;
 }
 
 .about-title {
@@ -151,7 +151,34 @@ background-color: #333;
 border-color: #333;
 transform: scale(1.02);
 }
+/* CV section */ 
+.cv-section {
+height: auto;
+min-height: 50vh;
+padding: 40px 20px;
+}
 
+.cv-content {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+max-width: 600px;
+margin: 0 auto;
+}
+
+.cv-button {
+display: right;
+width: 100%;
+background: #000;
+margin: 20px 0;
+}
+
+.cv-button:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+    transform: scale(1.02);
+}
 /* contact section section */
 .contact-title {
 width: 100%;

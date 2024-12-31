@@ -75,9 +75,16 @@ function Homepage() {
                     <h2>Projects</h2>
                     {/* Projects content */}
                 </section>
-                <section ref={cvRef}>
+                <section ref={cvRef} className="cv-section">
                     <h2>CV</h2>
-                    {/* CV content */}
+                    <div className="cv-content">
+                        <a href="/resume.pdf" download>
+                            <div className="social-button cv-button">
+                                <img src="/download-icon.png" alt="Download" /> {/* add download icon later */}
+                                <span>Download Resume</span>
+                            </div>
+                        </a>
+                    </div>
                 </section>
                 <section ref={contactRef} className="contact-section">
                     <h2 className="contact-title">Contact</h2>
