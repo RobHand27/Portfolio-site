@@ -71,9 +71,37 @@ function Homepage() {
                         </div>
                     </div>
                 </section>
-                <section ref={projectsRef}>
-                    <h2>Projects</h2>
-                    {/* Projects content */}
+                <section ref={projectsRef} className="projects-section">
+                    <h2 className="projects-title">Projects</h2>
+                    <div className="projects-grid">
+                        <div className="project-card">
+                            <div className="project-content">
+                                <h3>Project Title 1</h3>
+                                <img src="/githublogo.png" alt="Project 1" />
+                                <div className="project-hover">
+                                    <p>Brief description of project 1 that appears on hover</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="project-card">
+                            <div className="project-content">
+                                <h3>Project Title 2</h3>
+                                <img src="/linkedinlogo.png" alt="Project 2" />
+                                <div className="project-hover">
+                                    <p>Brief description of project 2 that appears on hover</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="project-card">
+                            <div className="project-content">
+                                <h3>Project Title 3</h3>
+                                <img src="/me.png" alt="Project 3" />
+                                <div className="project-hover">
+                                    <p>Brief description of project 3 that appears on hover</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section ref={cvRef} className="cv-section">
                     <h2>CV</h2>

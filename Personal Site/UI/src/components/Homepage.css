@@ -151,7 +151,88 @@ background-color: #333;
 border-color: #333;
 transform: scale(1.02);
 }
-/* CV section */ 
+/* Projects Section */
+.projects-section {
+padding: 60px 20px;
+min-height: 100vh;
+}
+
+.projects-title {
+width: 100%;
+text-align: center;
+margin-top: -200px; /* not the best implementation */
+margin-bottom: 40px;
+}
+
+.projects-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.project-card {
+position: relative;
+border-radius: 15px;
+overflow: hidden;
+transition: transform 0.3s ease;
+background: #f2f2f2;
+aspect-ratio: 4/3;
+}
+
+.project-content {
+position: relative;
+width: 100%;
+height: 100%;
+}
+
+.project-content img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.project-content h3 {
+position: absolute;
+bottom: 20px;
+left: 20px;
+color: white;
+z-index: 1;
+}
+
+.project-hover {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(45, 120, 48, 0.95);
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px;
+opacity: 0;
+transition: opacity 0.3s ease;
+box-sizing: border-box;
+}
+
+.project-card:hover {
+transform: scale(1.05);
+}
+
+.project-card:hover .project-hover {
+opacity: 1;
+}
+
+@media (max-width: 768px) {
+.projects-grid {
+    grid-template-columns: 1fr;
+}
+}
+/* CV section, needs more visual aids */ 
 .cv-section {
 height: auto;
 min-height: 50vh;
@@ -168,7 +249,6 @@ margin: 0 auto;
 }
 
 .cv-button {
-display: right;
 width: 100%;
 background: #000;
 margin: 20px 0;
