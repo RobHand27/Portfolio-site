@@ -80,7 +80,13 @@ flex: 2;
 padding-right: 20px;
 font-size: 22px;
 align-items: flex-start;
-/* line-height: 1.6; line spacing */
+line-height: 1.2;
+}
+
+.about-text br {
+content: "";
+display: block;
+margin-bottom: 1em;
 }
 
 .about-image {
