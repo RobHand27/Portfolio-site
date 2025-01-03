@@ -59,13 +59,13 @@ function Homepage() {
                             <div className="social-buttons-container">
                                 <a href="https://www.linkedin.com/in/rhand7/" target="_blank" rel="noopener noreferrer">
                                     <div className="social-button linkedin">
-                                        <img src="/linkedinlogo.png" alt="LinkedIn" />
+                                        <i class="devicon-linkedin-plain"></i>
                                         <span>Robert Hand</span>
                                     </div>
                                 </a>
                                 <a href="https://github.com/RobHand27" target="_blank" rel="noopener noreferrer">
                                     <div className="social-button github">
-                                        <img src="/githublogo.png" alt="GitHub" />
+                                        <i class="devicon-github-original"></i>
                                         <span>RobHand27</span>
                                     </div>
                                 </a>
@@ -81,7 +81,11 @@ function Homepage() {
                                 <h3>Project Title 1</h3>
                                 <img src="/githublogo.png" alt="Project 1" />
                                 <div className="project-hover">
-                                    <p>Brief description of project 1 that appears on hover</p>
+                                    <p>I'm a second-year computer science student at UIUC interested in full-stack development and machine learning.</p>
+                                    <div className="project-icons">
+                                        <i class="devicon-aarch64-plain"></i>
+                                        <i class="devicon-aarch64-plain"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -91,6 +95,10 @@ function Homepage() {
                                 <img src="/linkedinlogo.png" alt="Project 2" />
                                 <div className="project-hover">
                                     <p>Brief description of project 2 that appears on hover</p>
+                                    <div className="project-icons">
+                                        <i class="devicon-aarch64-plain"></i>
+                                        <i class="devicon-aarch64-plain"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
