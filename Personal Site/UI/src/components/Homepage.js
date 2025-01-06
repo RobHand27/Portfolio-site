@@ -111,6 +111,15 @@ function Homepage() {
                                 </div>
                             </div>
                         </div>
+                        <div className="project-card">
+                            <div className="project-content">
+                                <h3>Project Title 3</h3>
+                                <img src="/me.png" alt="Project 3" />
+                                <div className="project-hover">
+                                    <p>Brief description of project 3 that appears on hover</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section ref={cvRef} className="cv-section">
