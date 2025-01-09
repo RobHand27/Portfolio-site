@@ -78,45 +78,62 @@ function Homepage() {
                     <div className="projects-grid">
                         <div className="project-card">
                             <div className="project-content">
-                                <h3>Project Title 1</h3>
-                                <img src="/githublogo.png" alt="Project 1" />
+                                <h3>QuickThoughts</h3>
+                                <img src="/QuickThoughts.png" alt="QuickThoughts" />
                                 <div className="project-hover">
-                                    <p>I'm a second-year computer science student at UIUC interested in full-stack development and machine learning.</p>
+                                    <p>QuickThoughts is a social site where users can add friends, send messages, and make a short post once a day. I worked on the API, which is built with Node.js and Express.js, with MongoDb for the database.</p>
                                     <div className="project-icons">
-                                        <i class="devicon-aarch64-plain"></i>
-                                        <i class="devicon-aarch64-plain"></i>
+                                        <i class="devicon-mongodb-plain-wordmark"></i>
+                                        <i class="devicon-mongoose-original-wordmark"></i>
+                                        <i class="devicon-express-original"></i>
+                                        <i class="devicon-nodejs-plain-wordmark"></i>
+                                        <i class="devicon-react-original-wordmark"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="project-card">
                             <div className="project-content">
-                                <h3>Project Title 2</h3>
-                                <img src="/linkedinlogo.png" alt="Project 2" />
+                                <h3>Voltage Meter Machine Learning Model</h3>
+                                <img src="/Powerbox.png" alt="Project 2" />
                                 <div className="project-hover">
-                                    <p>Brief description of project 2 that appears on hover</p>
-                                    <div className="project-icons">
-                                        <i class="devicon-aarch64-plain"></i>
-                                        <i class="devicon-aarch64-plain"></i>
+                                    <p>This repo contains a machine learning model I built using Meta's Prophet. It is a MVP for a startup that tracks power usage in Latin America. It stores and buckets data in Google Cloud Platform and generates models using various graphing libraries.</p>
+                                    <div className='project-icons'>
+                                        <i class="devicon-googlecloud-plain-wordmark"></i>
+                                        <i class="devicon-python-plain"></i>
+                                        <i class="devicon-scikitlearn-plain"></i>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="project-card">
                             <div className="project-content">
-                                <h3>Project Title 3</h3>
-                                <img src="/me.png" alt="Project 3" />
+                                <h3>Chess Rating Predictions</h3>
+                                <img src="/Chess.png" alt="Chess ML Project" />
                                 <div className="project-hover">
-                                    <p>Brief description of project 3 that appears on hover</p>
+                                    <p>A data science and machine learning project involving the top 200 rated chess players database. Uses Pandas and Numpy for data analysis, Sklearn for predictions, and MatPlotLib for visualizations.</p>
+                                    <div className='project-icons'>
+                                        <i class="devicon-scikitlearn-plain"></i>
+                                        <i class="devicon-pandas-plain"></i>
+                                        <i class="devicon-numpy-plain"></i>
+                                        <i class="devicon-matplotlib-plain-wordmark"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div className="project-card">
                             <div className="project-content">
-                                <h3>Project Title 3</h3>
-                                <img src="/me.png" alt="Project 3" />
+                                <h3>Trendify Stocks</h3>
+                                <img src="/TrendifyProject.png" alt="TrendifyProject" />
                                 <div className="project-hover">
-                                    <p>Brief description of project 3 that appears on hover</p>
+                                    <p>A full stack, finance education app with interactive lessons and quizes. Built in Flask with Javascript functionalities.</p>
+                                    <div className="project-icons"> 
+                                        <i class="devicon-html5-plain"></i>
+                                        <i class="devicon-css3-plain"></i>
+                                        <i class="devicon-flask-original"></i>
+                                        <i class="devicon-javascript-plain"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>

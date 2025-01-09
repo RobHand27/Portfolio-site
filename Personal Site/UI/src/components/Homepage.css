@@ -161,13 +161,13 @@ transform: scale(1.02);
 /* Projects Section */
 .projects-section {
 padding: 60px 20px;
-min-height: 100vh;
+min-height: 110vh;
 }
 
 .projects-title {
 width: 100%;
 text-align: center;
-margin-top: -200px; /* not the best implementation */
+margin-top: 0px; /* not the best implementation */
 margin-bottom: 40px;
 }
 
