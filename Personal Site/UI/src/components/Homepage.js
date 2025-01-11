@@ -144,7 +144,7 @@ function Homepage() {
                     <div className="cv-content">
                         <a href="/resume.pdf" download>
                             <div className="social-button cv-button">
-                                <img src="/download-icon.png" alt="Download" /> {/* add download icon later */}
+                                <img src="/download.png" alt="Download" /> {/* add download icon later */}
                                 <span>Download Resume</span>
                             </div>
                         </a>
