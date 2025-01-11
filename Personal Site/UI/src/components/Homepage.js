@@ -140,11 +140,11 @@ function Homepage() {
                     </div>
                 </section>
                 <section ref={cvRef} className="cv-section">
-                    <h2>CV</h2>
+                    <h2 className="cv-title">CV</h2>
                     <div className="cv-content">
                         <a href="/resume.pdf" download>
                             <div className="social-button cv-button">
-                                <img src="/download.png" alt="Download" /> {/* add download icon later */}
+                                <span className="download-emoji">&#128229;</span>
                                 <span>Download Resume</span>
                             </div>
                         </a>
@@ -153,14 +153,12 @@ function Homepage() {
                 <section ref={contactRef} className="contact-section">
                     <h2 className="contact-title">Contact</h2>
                     <div className="contact-content">
-                        <h2>Get in Touch</h2>
-                        <p>We'd love to hear from you! Please fill out the form below and we'll get back to you as soon as possible.</p>
-                            <div className="contact-info">
-                                <h3>Other Ways to Reach Us</h3>
-                                <p>Email: contact@example.com</p>
-                                <p>Phone: (123) 456-7890</p>
-                                <p>Address: 123 Main St, Anytown, USA 12345</p>
+                        <a href="mailto:RobertTHand7@gmail.com">
+                            <div className="social-button contact-button">
+                                <span className="mail-emoji">&#128233;</span>
+                                <span>RobertTHand7@gmail.com</span>
                             </div>
+                        </a>
                     </div>
                 </section>
             </main>
@@ -170,12 +168,7 @@ function Homepage() {
 
 export default Homepage;
 
-// button code
-{/* <a href="https://www.example.com">
-  <button>Click me</button>
-</a> */}
-
-// dummy code for submission form instead of email
+//  WiP dummy code for submission form instead of email
 {/* <form onSubmit={handleSubmit}> */
 /* <div className="form-group">
 <label htmlFor="name">Name:</label>
