@@ -80,61 +80,68 @@ function Homepage() {
                             <div className="project-content">
                                 <h3>QuickThoughts</h3>
                                 <img src="/QuickThoughts.png" alt="QuickThoughts" />
-                                <div className="project-hover">
-                                    <p>QuickThoughts is a social site where users can add friends, send messages, and make a short post once a day. I worked on the API, which is built with Node.js and Express.js, with MongoDb for the database.</p>
-                                    <div className="project-icons">
-                                        <i class="devicon-mongodb-plain-wordmark"></i>
-                                        <i class="devicon-mongoose-original-wordmark"></i>
-                                        <i class="devicon-express-original"></i>
-                                        <i class="devicon-nodejs-plain-wordmark"></i>
-                                        <i class="devicon-react-original-wordmark"></i>
+                                <a href="https://github.com/CS222-UIUC/main-project-team-102" target="_blank" rel="noopener noreferrer">
+                                    <div className="project-hover">
+                                        <p>QuickThoughts is a social site where users can add friends, send messages, and make a short post once a day. I worked on the API, which is built with Node.js and Express.js, with MongoDb for the database.</p>
+                                        <div className="project-icons">
+                                            <i class="devicon-mongodb-plain-wordmark"></i>
+                                            <i class="devicon-mongoose-original-wordmark"></i>
+                                            <i class="devicon-express-original"></i>
+                                            <i class="devicon-nodejs-plain-wordmark"></i>
+                                            <i class="devicon-react-original-wordmark"></i>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div className="project-card">
                             <div className="project-content">
                                 <h3>Voltage Meter Machine Learning Model</h3>
                                 <img src="/Powerbox.png" alt="Project 2" />
-                                <div className="project-hover">
-                                    <p>This repo contains a machine learning model I built using Meta's Prophet. It is a MVP for a startup that tracks power usage in Latin America. It stores and buckets data in Google Cloud Platform and generates models using various graphing libraries.</p>
-                                    <div className='project-icons'>
-                                        <i class="devicon-googlecloud-plain-wordmark"></i>
-                                        <i class="devicon-python-plain"></i>
-                                        <i class="devicon-scikitlearn-plain"></i>
-
+                                <a href="https://github.com/RobHand27/Machine-Learning-Code-Samples/tree/main/Power%20Prediction%20Data" target="_blank" rel="noopener noreferrer">
+                                    <div className="project-hover">
+                                        <p>This repo contains a machine learning model I built using Meta's Prophet. It is a MVP for a startup that tracks power usage in Latin America. It stores and buckets data in Google Cloud Platform and generates models using various graphing libraries.</p>
+                                        <div className='project-icons'>
+                                            <i class="devicon-googlecloud-plain-wordmark"></i>
+                                            <i class="devicon-python-plain"></i>
+                                            <i class="devicon-scikitlearn-plain"></i>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div className="project-card">
                             <div className="project-content">
                                 <h3>Chess Rating Predictions</h3>
                                 <img src="/Chess.png" alt="Chess ML Project" />
-                                <div className="project-hover">
-                                    <p>A data science and machine learning project involving the top 200 rated chess players database. Uses Pandas and Numpy for data analysis, Sklearn for predictions, and MatPlotLib for visualizations.</p>
-                                    <div className='project-icons'>
-                                        <i class="devicon-scikitlearn-plain"></i>
-                                        <i class="devicon-pandas-plain"></i>
-                                        <i class="devicon-numpy-plain"></i>
-                                        <i class="devicon-matplotlib-plain-wordmark"></i>
+                                <a href="https://github.com/RobHand27/Machine-Learning-Code-Samples/tree/main/Chess%20Regression%20Data" target="_blank" rel="noopener noreferrer">
+                                    <div className="project-hover">
+                                        <p>A data science and machine learning project involving the top 200 rated chess players database. Uses Pandas and Numpy for data analysis, Sklearn for predictions, and MatPlotLib for visualizations.</p>
+                                        <div className='project-icons'>
+                                            <i class="devicon-scikitlearn-plain"></i>
+                                            <i class="devicon-pandas-plain"></i>
+                                            <i class="devicon-numpy-plain"></i>
+                                            <i class="devicon-matplotlib-plain-wordmark"></i>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div className="project-card">
                             <div className="project-content">
                                 <h3>Trendify Stocks</h3>
                                 <img src="/TrendifyProject.png" alt="TrendifyProject" />
-                                <div className="project-hover">
-                                    <p>A full stack, finance education app with interactive lessons and quizes. Built in Flask with Javascript functionalities.</p>
-                                    <div className="project-icons"> 
-                                        <i class="devicon-html5-plain"></i>
-                                        <i class="devicon-css3-plain"></i>
-                                        <i class="devicon-flask-original"></i>
-                                        <i class="devicon-javascript-plain"></i>
+                                <a href="https://github.com/RobHand27/TrendifyStocks" target="_blank" rel="noopener noreferrer">
+                                    <div className="project-hover">
+                                        <p>A full stack, finance education app with interactive lessons and quizes. Built in Flask with Javascript functionalities.</p>
+                                        <div className="project-icons"> 
+                                            <i class="devicon-html5-plain"></i>
+                                            <i class="devicon-css3-plain"></i>
+                                            <i class="devicon-flask-original"></i>
+                                            <i class="devicon-javascript-plain"></i>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
