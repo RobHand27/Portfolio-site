@@ -167,7 +167,7 @@ min-height: 110vh;
 .projects-title {
 width: 100%;
 text-align: center;
-margin-top: 0px; /* not the best implementation */
+margin-top: 40px; /* not the best implementation */
 margin-bottom: 40px;
 }
 
@@ -265,7 +265,7 @@ padding: 40px 20px;
 .cv-title {
 width: 100%;
 text-align: center;
-margin-top: 0px;
+margin-top: 40px;
 margin-bottom: 40px;
 }
 
@@ -313,7 +313,7 @@ padding: 40px 20px;
 .contact-title {
 width: 100%;
 text-align: center;
-margin-top: 0px;
+margin-top: 40px;
 margin-bottom: 40px;
 }
 
