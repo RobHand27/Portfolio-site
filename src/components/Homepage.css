@@ -7,7 +7,7 @@ position: fixed;
 top: 0;
 left: 0;
 right: 0;
-background-color: #519553; /* may need a color change */
+background-color: #32a09e; /* may need a color change */
 padding: 15px 0;
 z-index: 1000;
 }
@@ -21,7 +21,7 @@ button {
 margin: 0 10px;
 padding: 15px 40px;
 font-size: 20px;
-background-color: #519553;
+background-color: #32a09e;
 color: white;
 border: none;
 cursor: pointer;
@@ -29,7 +29,7 @@ transition: background-color 0.3s;
 }
 
 button:hover {
-background-color: #45a049;
+background-color: #3abab8;
 }
 
 main {
@@ -205,7 +205,7 @@ object-fit: cover;
 position: absolute;
 bottom: 20px;
 left: 20px;
-color: #fff;  /* cant seem to find the right color */
+color: #000;  /* cant seem to find the right color */
 z-index: 1;
 }
 
@@ -215,8 +215,8 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background: rgba(81, 149, 83, 0.95);
-color: white;
+background: rgba(50, 160, 158, 0.95);
+color: #000;
 display: flex;
 flex-direction: column;
 align-items: flex-start;
@@ -239,7 +239,7 @@ padding-left: 0px
 
 .project-icons i {
 font-size: 3rem;
-color: white;
+color: #000;
 }
 
 .project-card:hover {
@@ -298,8 +298,8 @@ justify-content: center;
 }
 
 .cv-button:hover {
-background-color: #45a049;
-border-color: #45a049;
+background-color: #32a09e;
+border-color: #32a09e;
 transform: scale(1.02);
 }
 
@@ -346,7 +346,7 @@ justify-content: center;
 }
 
 .contact-button:hover {
-background-color: #45a049;
-border-color: #45a049;
+background-color: #32a09e;
+border-color: #32a09e;
 transform: scale(1.02);
 }

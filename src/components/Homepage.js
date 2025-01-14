@@ -49,13 +49,13 @@ function Homepage() {
                         <div className="about-text">
                             <h3>Hi, I'm Rob &#128075;</h3>
                             <p>I'm a second-year computer science student at UIUC interested in full-stack development and machine learning.
-                                <br />In my full-stack development roles, most of my work has been with the MERN stack, building UI components in React.js, backend APIs in Node.js and Express.js, and managing databases in MongoDB or PostgreSQL. While most of my recent projects, like the social networking site QuickThoughts, along with this site, are built with these technologies, I also have experience in Python with Flask and a few other HTML frameworks.
+                                <br />In my full-stack development roles, most of my work has been with the MERN stack, building UI components in React.js, backend APIs in Node.js and Express.js, and managing databases in MongoDB and PostgreSQL. While most of my recent projects, like the social networking site QuickThoughts, along with this site, are built with these technologies, I also have experience in Python with Flask and a few other HTML frameworks.
                                 <br />Much of my experience in machine learning comes from my work at UIUC Disruption Lab and with PowerBox Technologies, a research park startup. In both roles, most of my code contributions were in Python, using libraries such as Numpy, Sklearn, Pandas, and Prophet while utilizing tools like Google Cloud Platform and VertexAI. You can find many of my code samples from these roles on my GitHub profile.
                                 <br />I'm an adaptive learner, and picking up new tools quickly is one of my biggest strengths in the industry. Please reach out if you'd like to chat about professional opportunities or anything tech!
                             </p>
                         </div>
                         <div className="about-image">
-                            <img src="/me.png" alt="Picture of me" />
+                            <img src={`${process.env.PUBLIC_URL}/me.png`} alt="Picture of me" />
                             <div className="social-buttons-container">
                                 <a href="https://www.linkedin.com/in/rhand7/" target="_blank" rel="noopener noreferrer">
                                     <div className="social-button linkedin">
@@ -79,7 +79,7 @@ function Homepage() {
                         <div className="project-card">
                             <div className="project-content">
                                 <h3>QuickThoughts</h3>
-                                <img src="/QuickThoughts.png" alt="QuickThoughts" />
+                                <img src={`${process.env.PUBLIC_URL}/QuickThoughts.png`} alt="QuickThoughts" />
                                 <a href="https://github.com/CS222-UIUC/main-project-team-102" target="_blank" rel="noopener noreferrer">
                                     <div className="project-hover">
                                         <p>QuickThoughts is a social site where users can add friends, send messages, and make a short post once a day. I worked on the API, which is built with Node.js and Express.js, with MongoDb for the database.</p>
@@ -97,7 +97,7 @@ function Homepage() {
                         <div className="project-card">
                             <div className="project-content">
                                 <h3>Voltage Meter Machine Learning Model</h3>
-                                <img src="/Powerbox.png" alt="Project 2" />
+                                <img src={`${process.env.PUBLIC_URL}/Powerbox.png`} alt="Powerbox" />
                                 <a href="https://github.com/RobHand27/Machine-Learning-Code-Samples/tree/main/Power%20Prediction%20Data" target="_blank" rel="noopener noreferrer">
                                     <div className="project-hover">
                                         <p>This repo contains a machine learning model I built using Meta's Prophet. It is a MVP for a startup that tracks power usage in Latin America. It stores and buckets data in Google Cloud Platform and generates models using various graphing libraries.</p>
@@ -113,7 +113,7 @@ function Homepage() {
                         <div className="project-card">
                             <div className="project-content">
                                 <h3>Chess Rating Predictions</h3>
-                                <img src="/Chess.png" alt="Chess ML Project" />
+                                <img src={`${process.env.PUBLIC_URL}/Chess.png`} alt="Chess ML Project" />
                                 <a href="https://github.com/RobHand27/Machine-Learning-Code-Samples/tree/main/Chess%20Regression%20Data" target="_blank" rel="noopener noreferrer">
                                     <div className="project-hover">
                                         <p>A data science and machine learning project involving the top 200 rated chess players database. Uses Pandas and Numpy for data analysis, Sklearn for predictions, and MatPlotLib for visualizations.</p>
@@ -130,7 +130,7 @@ function Homepage() {
                         <div className="project-card">
                             <div className="project-content">
                                 <h3>Trendify Stocks</h3>
-                                <img src="/TrendifyProject.png" alt="TrendifyProject" />
+                                <img src={`${process.env.PUBLIC_URL}/TrendifyProject.png`} alt="TrendifyProject" />
                                 <a href="https://github.com/RobHand27/TrendifyStocks" target="_blank" rel="noopener noreferrer">
                                     <div className="project-hover">
                                         <p>A full stack, finance education app with interactive lessons and quizes. Built in Flask with Javascript functionalities.</p>
@@ -149,7 +149,7 @@ function Homepage() {
                 <section ref={cvRef} className="cv-section">
                     <h2 className="cv-title">CV</h2>
                     <div className="cv-content">
-                        <a href="/resume.pdf" download>
+                        <a href={`${process.env.PUBLIC_URL}/resume.pdf`} download>
                             <div className="social-button cv-button">
                                 <span className="download-emoji">&#128229;</span>
                                 <span>Download Resume</span>
