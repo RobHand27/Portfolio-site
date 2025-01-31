@@ -112,6 +112,21 @@ function Homepage() {
                         </div>
                         <div className="project-card">
                             <div className="project-content">
+                                <h3>Mosaic Maker</h3>
+                                <img src={`${process.env.PUBLIC_URL}/Mosaic.png`} alt="Mosaic Maker" />
+                                <a href="https://github.com/RobHand27/Mosaic-Maker" target="_blank" rel="noopener noreferrer">
+                                    <div className="project-hover">
+                                        <p>A C++ program used to build a mosaic from source images using a K-D tree search algorithm.</p>
+                                        <div className="project-icons"> 
+                                            <i class="devicon-cplusplus-plain"></i>
+                                            <i class="devicon-cmake-plain"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="project-card">
+                            <div className="project-content">
                                 <h3>Chess Rating Predictions</h3>
                                 <img src={`${process.env.PUBLIC_URL}/Chess.png`} alt="Chess ML Project" />
                                 <a href="https://github.com/RobHand27/Machine-Learning-Code-Samples/tree/main/Chess%20Regression%20Data" target="_blank" rel="noopener noreferrer">
