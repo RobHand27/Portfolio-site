@@ -3,6 +3,7 @@ import { Github, Linkedin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import SectionTitle from "@/components/section-title"
 import AnimatedSection from "@/components/animated-section"
+import { getAssetPath } from "@/lib/utils"
 
 export default function AboutSection() {
   return (
@@ -63,7 +64,7 @@ export default function AboutSection() {
               <div className="flex flex-col items-center space-y-6">
                 <div className="relative w-80 h-80 rounded-full overflow-hidden border-8 border-blue-500 shadow-lg">
                   <Image
-                    src="/me.png"
+                    src={getAssetPath('/me.png') || "/placeholder.svg"}
                     alt="Profile picture"
                     fill
                     className="object-cover"

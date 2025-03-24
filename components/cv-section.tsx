@@ -2,6 +2,7 @@ import { FileDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import SectionTitle from "@/components/section-title"
 import AnimatedSection from "@/components/animated-section"
+import { getAssetPath } from "@/lib/utils"
 
 export default function CVSection() {
   return (
@@ -16,7 +17,7 @@ export default function CVSection() {
             </p>
 
             <Button className="flex items-center gap-2" size="lg" asChild>
-              <a href="/resume.pdf" download>
+              <a href={getAssetPath('/resume.pdf') || "/placeholder.svg"} download>
                 <FileDown className="h-5 w-5" />
                 <span>Download Resume</span>
               </a>

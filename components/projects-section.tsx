@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import SectionTitle from "@/components/section-title";
 import AnimatedSection from "@/components/animated-section";
+import { getAssetPath } from "@/lib/utils"
 
 const projects = [
   {
@@ -84,7 +85,7 @@ export default function ProjectsSection() {
                 <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-xl">
                   <div className="relative h-64 w-full">
                     <Image
-                      src={project.image || "/placeholder.svg"}
+                      src={getAssetPath(project.image) || "/placeholder.svg"}
                       alt={project.title}
                       fill
                       className="object-cover"
