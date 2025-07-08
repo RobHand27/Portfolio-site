@@ -22,4 +22,6 @@ yarn-error.log*
 
 pnpm-lock.yaml
 
+.deploy-instructions.txt
+
 # you might need to add /components/ui to

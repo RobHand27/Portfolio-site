@@ -10,7 +10,8 @@ import SectionTitle from "@/components/section-title";
 import AnimatedSection from "@/components/animated-section";
 import { getAssetPath } from "@/lib/utils"
 
-const projects = [
+const projects = [ // add DSRS, MCQ helper, and FDL research 
+  //https://github.com/RobHand27/MCQ-Helper
   {
     id: 1,
     title: "AltCredit",
@@ -22,6 +23,33 @@ const projects = [
   },
   {
     id: 2,
+    title: "NLP Research with Forward Data Lab",
+    description:
+      "Repo containing my work with Prof. Kevin Cheng on RAG models and NLP for query-based research summarization and information retrieval.",
+    image: "/research.png",
+    technologies: ["NLP", "python", "RAG", "Machine Learning"],
+    githubUrl: "https://github.com/RobHand27/Forward-Data-Lab-Research",
+  },
+  {
+    id: 3,
+    title: "Data Science Research Intstitute Workflow Tool",
+    description:
+      "Interactive graph visualization tool for DSRS workflows using Neo4j database and React/Vue.js frontend.",
+    image: "/hey.png",
+    technologies: ["react", "Vue.js", "mongodb", "express"],
+    githubUrl: "https://github.com/RobHand27/",
+  },
+  {
+    id: 4,
+    title: "MCQ Solver Chrome Extension",
+    description:
+      "Hidden chrome extension that uses OpenAI's API to solve MCQs using highlighted text and screenshots.",
+    image: "/MCQhelp.png",
+    technologies: ["react", "Vue.js", "mongodb", "express"],
+    githubUrl: "https://github.com/RobHand27/MCQ-Helper",
+  },
+  {
+    id: 5,
     title: "QuickThoughts",
     description:
       "A social networking platform built with the MERN stack that allows users to share thoughts and connect with others.",
@@ -30,7 +58,7 @@ const projects = [
     githubUrl: "https://github.com/CS222-UIUC/main-project-team-102",
   },
   {
-    id: 3,
+    id: 6,
     title: "Voltage Meter ML Model",
     description:
       "This repo contains a machine learning model I built using Meta's Prophet. It is a MVP for a startup that tracks power usage in Latin America.",
@@ -40,7 +68,7 @@ const projects = [
     githubUrl: "https://github.com/RobHand27/Machine-Learning-Code-Samples/tree/main/Power%20Prediction%20Data",
   },
   {
-    id: 4,
+    id: 7,
     title: "Mosaic Maker",
     description: "A C++ program that generates a mosaic image from a collection of smaller images. Uses a KD-Tree for fast image search and generation.",
     image: "/mosaic.png",
@@ -48,7 +76,7 @@ const projects = [
     githubUrl: "https://github.com/RobHand27/Mosaic-Maker",
   },
   {
-    id: 5,
+    id: 8,
     title: "Chess Rating Predictions",
     description: "A machine learning model that predicts chess ratings based on game history and player statistics.",
     image: "/Chess.png",
@@ -56,7 +84,7 @@ const projects = [
     githubUrl: "https://github.com/RobHand27/Machine-Learning-Code-Samples/tree/main/Chess%20Regression%20Data",
   },
   {
-    id: 6,
+    id: 9,
     title: "Trendify Stocks",
     description: "A web application that provides stock market analysis and trend predictions for investors.",
     image: "/TrendifyProject.png",
@@ -91,9 +119,8 @@ export default function ProjectsSection() {
                       className="object-cover"
                     />
                     <div
-                      className={`absolute inset-0 bg-blue-600/90 flex flex-col justify-between p-6 transition-opacity duration-300 ${
-                        hoveredProject === project.id ? "opacity-100" : "opacity-0"
-                      }`}
+                      className={`absolute inset-0 bg-blue-600/90 flex flex-col justify-between p-6 transition-opacity duration-300 ${hoveredProject === project.id ? "opacity-100" : "opacity-0"
+                        }`}
                     >
                       <div>
                         <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>

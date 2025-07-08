@@ -1,0 +1,4 @@
+RUN THESE COMMANDS TO DEPLOY UPDATES!
+
+npm run build
+npm run deploy
