@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Rob Hand Portfolio",
   description: "A software engineer all recruiters should hire",
+  verification: {
+    google: "F-TNEnwh_HsEitJU2-QGMd9BkERY2BNfWAh_UVirufw",
+  },
 }
 
 export default function RootLayout({
@@ -26,5 +29,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-import './globals.css'
