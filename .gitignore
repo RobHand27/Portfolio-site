@@ -24,4 +24,6 @@ pnpm-lock.yaml
 
 .deploy-instructions.txt
 
+/.next
+
 # you might need to add /components/ui to
