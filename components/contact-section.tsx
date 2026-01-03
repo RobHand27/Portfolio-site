@@ -17,9 +17,9 @@ export default function ContactSection() {
             </p>
 
             <Button className="flex items-center gap-2" size="lg" asChild>
-              <a href="mailto:RobertHand7@gmail.com">
+              <a href="mailto:RobertTHand7@gmail.com">
                 <Mail className="h-5 w-5" />
-                <span>RobertHand7@gmail.com</span>
+                <span>RobertTHand7@gmail.com</span>
               </a>
             </Button>
           </div>

@@ -42,7 +42,7 @@ export default function AboutSection() {
                 src={getAssetPath('/me.png') || "/placeholder.svg"}
                 alt="Profile picture"
                 fill
-                className="object-cover"
+                className="object-cover object-[75%_0%] scale-150"
               />
             </div>
             <div className="flex flex-col space-y-3 w-full max-w-xs">

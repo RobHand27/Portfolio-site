@@ -115,20 +115,22 @@ export default function ProjectsSection() {
 
   return (
     <section id="projects" className="py-16 bg-gradient-to-b from-white to-blue-50">
-      <div className="max-w-6xl mx-auto">
+      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle id="projects" title="" highlight="Projects" />
 
         <AnimatedSection delay={0.3}>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 w-full">
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="relative group"
+                className="relative group w-full"
                 onMouseEnter={() => setHoveredProject(project.id)}
                 onMouseLeave={() => setHoveredProject(null)}
+                onTouchStart={() => setHoveredProject(project.id)}
+                onTouchEnd={() => setHoveredProject(null)}
               >
-                <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-xl">
-                  <div className="relative h-64 w-full">
+                <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-xl w-full max-w-full">
+                  <div className="relative h-48 sm:h-56 md:h-64 w-full min-w-0">
                     <Image
                       src={getAssetPath(project.image) || "/placeholder.svg"}
                       alt={project.title}
@@ -136,18 +138,18 @@ export default function ProjectsSection() {
                       className="object-cover"
                     />
                     <div
-                      className={`absolute inset-0 bg-blue-600/90 flex flex-col justify-between p-6 transition-opacity duration-300 ${hoveredProject === project.id ? "opacity-100" : "opacity-0"
+                      className={`absolute inset-0 bg-blue-600/90 flex flex-col justify-between p-3 sm:p-4 md:p-6 transition-opacity duration-300 overflow-hidden ${hoveredProject === project.id ? "opacity-100" : "opacity-0"
                         }`}
                     >
                       <div>
-                        <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>
-                        <p className="text-white/90 text-sm">{project.description}</p>
+                        <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">{project.title}</h3>
+                        <p className="text-white/90 text-xs sm:text-sm leading-relaxed">{project.description}</p>
                       </div>
 
                       <div>
-                        <div className="flex flex-wrap gap-3 mb-4">
+                        <div className="flex flex-wrap gap-2 sm:gap-3 mb-3 sm:mb-4">
                           {project.technologies.map((tech) => (
-                            <div key={tech} className="text-white text-2xl" title={tech}>
+                            <div key={tech} className="text-white text-lg sm:text-2xl" title={tech}>
                               <i className={`devicon-${tech}-plain`}></i>
                             </div>
                           ))}
@@ -156,19 +158,19 @@ export default function ProjectsSection() {
                         <Button
                           variant="secondary"
                           size="sm"
-                          className="w-full flex items-center justify-center gap-2"
+                          className="w-full flex items-center justify-center gap-2 text-xs sm:text-sm"
                           asChild
                         >
                           <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                            <ExternalLink className="h-4 w-4" />
+                            <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4" />
                             <span>Visit Project</span>
                           </a>
                         </Button>
                       </div>
                     </div>
                   </div>
-                  <CardContent className="p-4">
-                    <h3 className="text-xl font-bold text-gray-800">{project.title}</h3>
+                  <CardContent className="p-3 sm:p-4">
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-800">{project.title}</h3>
                   </CardContent>
                 </Card>
               </div>
