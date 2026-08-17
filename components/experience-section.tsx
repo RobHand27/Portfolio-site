@@ -79,11 +79,13 @@ export default function ExperienceSection() {
             </div>
 
             <div className="relative">
-              <div className="absolute left-[17px] top-2 bottom-2 w-px" style={{ background: "linear-gradient(to bottom, transparent, rgba(60,140,240,0.45), transparent)" }} />
+              {/* Adjusted line left position from 17px to 22px */}
+              <div className="absolute left-[22px] top-2 bottom-2 w-px" style={{ background: "linear-gradient(to bottom, transparent, rgba(60,140,240,0.45), transparent)" }} />
               <ol className="space-y-8 pl-10">
                 {timeline.map((item, i) => (
                   <li key={i} className="relative">
-                    <span className="absolute -left-[23px] top-[5px] w-3 h-3 rounded-full" style={{ background: "rgba(50,135,240,0.9)", boxShadow: "0 0 10px rgba(50,135,240,0.55)", border: "1.5px solid rgba(140,200,255,0.4)" }} />
+                    {/* Adjusted dot left position to -24px and top position to 36px to center with the icon */}
+                    <span className="absolute -left-[24px] top-[36px] w-3 h-3 rounded-full" style={{ background: "rgba(50,135,240,0.9)", boxShadow: "0 0 10px rgba(50,135,240,0.55)", border: "1.5px solid rgba(140,200,255,0.4)" }} />
                     <div className="grid gap-4 md:grid-cols-[84px_minmax(0,1fr)] md:gap-6 md:items-start">
                       <div className="flex h-[84px] w-[84px] items-center justify-center rounded-[20px] border border-white/15 bg-white overflow-hidden shadow-[0_14px_36px_rgba(0,0,0,0.18)]">
                         <img

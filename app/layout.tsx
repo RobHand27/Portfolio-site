@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import "./globals.css"
+import "./global.css"
 
 export const metadata: Metadata = {
   title: "Rob Hand | Software Engineer",
@@ -37,7 +37,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      {/* Add the font-sans class here */}
+      <body className="font-sans">{children}</body>
     </html>
   )
 }

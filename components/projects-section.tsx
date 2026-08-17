@@ -118,70 +118,6 @@ const projects = [
   }
 ]
 
-// export default function ProjectsSection() {
-//   const [hovered, setHovered] = useState<number | null>(null)
-//   return (
-//     <section id="projects" className="relative py-24 px-4">
-//       <div className="max-w-6xl mx-auto">
-//         <AnimatedSection delay={0.1}>
-//           <div className="mb-12">
-//             <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-3" style={{ color: "rgba(110,180,255,0.65)" }}>
-//               Portfolio
-//             </p>
-//             <h2 className="text-4xl md:text-5xl font-bold shimmer-text">Projects</h2>
-//           </div>
-//         </AnimatedSection>
-//         <AnimatedSection delay={0.2}>
-//           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-//             {projects.map((project) => (
-//               <a
-//                 key={project.id}
-//                 href={project.url}
-//                 target="_blank"
-//                 rel="noopener noreferrer"
-//                 className="dock-card group block no-underline"
-//                 onMouseEnter={() => setHovered(project.id)}
-//                 onMouseLeave={() => setHovered(null)}
-//                 style={{
-//                   boxShadow:
-//                     hovered === project.id
-//                       ? `0 24px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.1), 0 0 40px ${project.accent}22`
-//                       : "none",
-//                 }}
-//               >
-//                 {/* Thumbnail */}
-//                 <div className="relative h-44 w-full overflow-hidden rounded-t-[20px]">
-//                   <Image
-//                     src={getAssetPath(project.image) || "/placeholder.svg"}
-//                     alt={project.title}
-//                     fill
-//                     className="object-cover transition-transform duration-500 group-hover:scale-105"
-//                   />
-//                   <div className="absolute inset-x-0 bottom-0 h-20" style={{ background: "linear-gradient(to top, rgba(10,10,26,0.85) 0%, transparent 100%)" }} />
-//                   <span className="absolute top-3 right-3 w-2.5 h-2.5 rounded-full" style={{ background: project.accent, boxShadow: `0 0 8px ${project.accent}` }} />
-//                 </div>
-//                 {/* Card body */}
-//                 <div className="p-5">
-//                   <div className="flex items-start justify-between gap-2 mb-1">
-//                     <h3 className="text-base font-semibold text-white/90 leading-tight">{project.title}</h3>
-//                     <ExternalLink className="shrink-0 h-3.5 w-3.5 mt-0.5 opacity-0 group-hover:opacity-60 transition-opacity" style={{ color: project.accent }} />
-//                   </div>
-//                   <p className="text-xs font-medium mb-3" style={{ color: project.accent, opacity: 0.85 }}>{project.tagline}</p>
-//                   <p className="text-xs leading-relaxed mb-4" style={{ color: "rgba(180,215,255,0.6)" }}>{project.description}</p>
-//                   <div className="flex flex-wrap gap-1.5">
-//                     {project.tags.map((tag) => (
-//                       <span key={tag} className="text-[10px] px-2.5 py-0.5 rounded-full font-medium" style={{ background: `${project.accent}18`, border: `1px solid ${project.accent}35`, color: project.accent }}>{tag}</span>
-//                     ))}
-//                   </div>
-//                 </div>
-//               </a>
-//             ))}
-//           </div>
-//         </AnimatedSection>
-//       </div>
-//     </section>
-//   )
-// }
 
 export default function ProjectsSection() {
   const [hovered, setHovered] = useState<number | null>(null)
@@ -194,7 +130,7 @@ export default function ProjectsSection() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-3" style={{ color: "rgba(110,180,255,0.65)" }}>
               Portfolio
             </p>
-            <h2 className="text-4xl md:text-5xl font-bold shimmer-text">Projects</h2>
+              <h2 className="text-4xl md:text-5xl font-bold shimmer-text leading-normal pb-2">Projects</h2>
           </div>
         </AnimatedSection>
         
