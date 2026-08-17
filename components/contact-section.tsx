@@ -16,7 +16,7 @@ export default function ContactSection() {
               I'll get back to you as soon as possible.
             </p>
 
-            <Button className="flex items-center gap-2" size="lg" asChild>
+            <Button className="flex items-center gap-2" asChild>
               <a href="mailto:RobertTHand7@gmail.com">
                 <Mail className="h-5 w-5" />
                 <span>RobertTHand7@gmail.com</span>

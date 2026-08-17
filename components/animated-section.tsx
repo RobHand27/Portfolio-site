@@ -10,7 +10,11 @@ interface AnimatedSectionProps {
 
 export default function AnimatedSection({ children, delay = 0.2 }: AnimatedSectionProps) {
   const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref, { once: true, amount: 0.2 })
+  const isInView = useInView(ref, { 
+    once: true, 
+    amount: 0, 
+    margin: "0px 0px 50px 0px" 
+  })
 
   return (
     <div
@@ -25,4 +29,3 @@ export default function AnimatedSection({ children, delay = 0.2 }: AnimatedSecti
     </div>
   )
 }
-

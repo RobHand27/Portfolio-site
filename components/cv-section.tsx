@@ -16,7 +16,7 @@ export default function CVSection() {
               Download my resume to learn more about my educational background, work experiences, and technical skills.
             </p>
 
-            <Button className="flex items-center gap-2" size="lg" asChild>
+            <Button className="flex items-center gap-2" asChild>
               <a href={getAssetPath('/resume.pdf') || "/placeholder.svg"} download>
                 <FileDown className="h-5 w-5" />
                 <span>Download Resume</span>
