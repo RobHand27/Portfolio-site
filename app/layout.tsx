@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     icon: "/logo.svg",
   },
   verification: {
-    google: "F-TNEnwh_HsEitJU2-QGMd9BkERY2BNfWAh_UVirufw",
+    google: "E25ItyEFsNt4HmG7o0umpINxhDehL-LcyhUsK6N9y8U",
   },
   openGraph: {
     title: "Hi, I'm Rob Hand",
